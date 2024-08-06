@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(181, 173, 173);
+    position: absolute;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10vh;
+}
+h1{
+    margin-bottom: 5vh;
+    font-size: 35px;
+    font-weight: 900;
+}
+.input{
+    max-width: 500px;
+   
+}
+.input input{
+    padding: 2vh 4vh ; 
+    border-radius: 5px ;
+    margin: 10px 2px;
+    font-size: 24px;
+    border: none;
+    outline: none;
+}
+.input input[type="button"]{
+    background-color: rgb(29, 215, 29);
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    
+}
+.input input[type="button"]:hover{
+    background-color: rgb(27, 178, 27);
+   
+}
+ul{
+    width:100%;
+    max-width: 400px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+ul li{
+    list-style-type: none;
+    cursor: pointer;
+    margin-block-end: 12px;
+    border-radius: 8px;
+    border: 0.125px solid black;
+    padding: 6px 12px;
+    background-color: #fff;
+    margin:2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.12s;
+}
+ul li:hover{
+    background-color: #c1bcbc;
+}
+ul li p{
+    flex-grow: 1;
+    padding: 4px;
+}
+.btn{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: none;
+    font-weight:600;
+    margin: 0 5px;
+    padding: 2px 5px;
+    cursor: pointer;
+
+}
+.delbtn{
+    color: red;
+
+}
+.editbtn{
+    color: green;
+}
+
+@media screen and (max-width:600px) {
+    
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        
+    }
+
+    .input input{
+        padding: 5px;
+        font-size: 18px;
+    }
+}
